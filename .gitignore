@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 .DS_Store
 Predizione_Bitcoin.ipynb
+__pycache__
