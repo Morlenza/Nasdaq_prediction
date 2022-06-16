@@ -16,7 +16,7 @@ roi.__doc__ = "Restituisce il guadagno in percentuale"
 
 def print_eval(X, y, model, open):
     preds = model.predict(X)
-    print("Gain: {:.2f}$".format(gain(y, preds)))
+    print("Gain: {:.2f}€".format(gain(y, preds)))
     print(" ROI: {:.3%}".format(roi(y, preds, open)))
 print_eval.__doc__ = "Calcola i valori predetti dato un modello e stampa a video Gain e ROI"
     
@@ -29,7 +29,7 @@ prepare_data.__doc__ = "Restituisce X e y data una lista di features e un parame
 
 def plot_model_on_data(X, y, model=None):
     plt.figure(figsize=(10, 7))
-    plt.scatter(X, y)
+    plt.scatter(X["Open"], y)
     if model is not None:
         xlim, ylim = plt.xlim(), plt.ylim()
         line_x = np.linspace(xlim[0], xlim[1], 100)
