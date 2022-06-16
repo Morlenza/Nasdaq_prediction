@@ -37,5 +37,5 @@ def plot_model_on_data(X, y, model=None):
         plt.plot(line_x, line_y, c="red", lw=3)
         plt.xlim(xlim); plt.ylim(ylim)
     plt.grid()
-    plt.xlabel("Temperatura (°C)"); plt.ylabel("Consumi (GW)")
+    plt.xlabel("Open"); plt.ylabel("Delta")
 plot_model_on_data.__doc__ = "Visualizza un grafico che mostra l'applicazione della LinearRegression sui dati"
