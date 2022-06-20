@@ -16,7 +16,7 @@ roi.__doc__ = "Restituisce il guadagno in percentuale"
 
 def print_eval(X, y, model, open):
     preds = model.predict(X)
-    print("Gain: {:.2f}€".format(gain(y, preds)))
+    print("Gain: {:.2f}$".format(gain(y, preds)))
     print(" ROI: {:.3%}".format(roi(y, preds, open)))
 print_eval.__doc__ = "Calcola i valori predetti dato un modello e stampa a video Gain e ROI"
     
